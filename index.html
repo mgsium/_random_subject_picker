@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Random Subject picker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./stylesheet.css">
+        <script src="./FileSaver/dist/FileSaver.js"></script>
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <span class="nabar-brand mb-0">Random Study Generator</span>
+            </a>
+        </nav>
+
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center container">
+                <div class="row">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <div style="padding:30px 10px">
+                                <input class="form-control form-control-sm" id="num-of-hours" placeholder="Enter number of hours here"></input>
+                            </div>        
+                        </div>
+                        <button class="btn btn-primary btn-sm" id="submit" type="submit" onclick="getSubjects(); return false;">Submit</button>       
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container table-responseive">
+            <table class="table table-striped table-hover" id="subject-table">
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Time / Minutes</th>
+                    </tr>
+                    <tbody id="subject-table-body">
+
+                    </tbody>
+                </thead>
+
+            </table>
+        </div>
+
+        <div class="container" id="misc-buttons">
+                <button id="clear-button" class="btn btn-primary btn-sm" id="submit" type="submit" onclick="clearTable(); return false;">Clear</button>
+                <button id="export-button" class="btn btn-primary btn-sm" id="submit" type="submit" onclick="exportTable(); return false;">Export</button>
+        </div>
+    </body>
+</html>
+
+
+<!-- <h1>Random subject picker</h1> -->

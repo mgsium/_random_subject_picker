@@ -10,18 +10,22 @@
         <script src="./script.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-light bg-light fixed-top navbar-expland-lg">
             <a class="navbar-brand" href="#">
                 <span class="nabar-brand mb-0">Random Study Generator</span>
             </a>
+            <div vlass="btn-group">
+                <button id="clear-button" class="btn btn-outline-primary waves-effect btn-sm" id="submit" type="submit" onclick="clearTable(); return false;">Clear</button></li>
+                <button id="export-button" class="btn btn-outline-primary waves-effect btn-sm" id="submit" type="submit" onclick="exportTable(); return false;">Export</button></li>
+            </div>
         </nav>
 
         <div class="container">
             <div class="d-flex justify-content-center align-items-center container">
                 <div class="row">
-                    <form class="form-inline">
+                    <form class="form-inline" style="padding:60px 30px 10px 10px">
                         <div class="form-group">
-                            <div style="padding:30px 10px">
+                            <div>
                                 <input class="form-control form-control-sm" id="num-of-hours" placeholder="Enter number of hours here"></input>
                             </div>        
                         </div>
@@ -31,7 +35,7 @@
             </div>
         </div>
 
-        <div class="container table-responseive">
+        <div class="container table-responsive">
             <table class="table table-striped table-hover" id="subject-table">
                 <thead>
                     <tr>
@@ -46,10 +50,17 @@
             </table>
         </div>
 
-        <div class="container" id="misc-buttons">
-                <button id="clear-button" class="btn btn-primary btn-sm" id="submit" type="submit" onclick="clearTable(); return false;">Clear</button>
-                <button id="export-button" class="btn btn-primary btn-sm" id="submit" type="submit" onclick="exportTable(); return false;">Export</button>
-        </div>
+
+        <footer class="footer" id="footer">
+            <hr>
+            <div class="container">
+                <ul style="list-style-type: none;">
+                    <li style="font-weight: bold" >Links</li>
+                    <li>Home Page</li>
+                    <li>Contact</li>
+                </ul>     
+            </div>
+        </footer>
     </body>
 </html>
 

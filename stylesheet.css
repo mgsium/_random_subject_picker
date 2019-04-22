@@ -1,27 +1,26 @@
-#clear-button {
-    width:100%; 
-    background-color: #B0FFB0; 
-    border: 1px white;
-}
-
-#clear-button:hover {
-    background-color:green;
-}
-
-#export-button {
-    width:100%;
-    border: 1px white;
-    background-color: #FFD6FF;
-}
-
-#export-button:hover {
-    background-color: #DD77DD;
-}
-
 div {
     padding:10px;
 }
 
 #misc-buttons {
-    display:none;
+    display:inline-block;
+    float: right;
+}
+
+#footer {
+    /*background-color: teal;
+    color: white;
+    position: relative;*/
+    bottom: 0px;
+    width: 100%;
+}
+
+#num-of-hours {
+    width: 250px;
+}
+
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
 }

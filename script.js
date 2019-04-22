@@ -48,14 +48,14 @@ function getSubjects(){
             subjectTableBody.innerHTML += htmlElement;
         }
 
-        document.getElementById("misc-buttons").style.display = "block";
+        // document.getElementById("misc-buttons").style.display = "block";
 
     }
 }
 
 
 function clearTable(){
-    document.getElementById("subject-table-body").remove();
+    // document.getElementById("subject-table-body").remove();
     document.getElementById("misc-buttons").style.display = "none";
 }
 

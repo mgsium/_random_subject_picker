@@ -11,6 +11,9 @@ window.subjects = {
 }
 
 function getSubjects(){
+    
+    clearTable();
+
     let time = document.getElementById("num-of-hours").value;
     if (time.length > 0 && !(isNaN(time)) && Number(time) <= 24) {
         document.getElementById("num-of-hours").value = "";
@@ -49,14 +52,19 @@ function getSubjects(){
         }
 
         // document.getElementById("misc-buttons").style.display = "block";
+        document.getElementById("clear-button").disabled = false;
+        document.getElementById("export-button").disabled = false;
 
     }
 }
 
 
 function clearTable(){
-    // document.getElementById("subject-table-body").remove();
-    document.getElementById("misc-buttons").style.display = "none";
+    document.getElementById("subject-table-body").remove();
+    // document.getElementById("misc-buttons").style.display = "none";
+
+    document.getElementById("clear-button").disabled = true;
+    document.getElementById("export-button").disabled = true;
 }
 
 function exportTable(){

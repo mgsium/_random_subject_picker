@@ -10,8 +10,7 @@ window.subjects = {
     "Programming" : 60,
 }
 
-function getSubjects(){
-    
+function getSubjects(){   
     clearTable();
 
     let time = document.getElementById("num-of-hours").value;
